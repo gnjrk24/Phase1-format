@@ -6,14 +6,14 @@ console.log(
   `<ul>タグの2つめの子要素のテキストは ${list.children[1].textContent} です。`
 );
 
-// HTMLの特定の`<ul>`タグの中に`<li>`タグを追加する
+
 const newItem = document.createElement("li");
 newItem.textContent = "もも";
 list.appendChild(newItem);
 
-// HTMLの特定の`<button>`タグがクリックされたときに確認アラートを表示する
+// HTMLの特定の`<button>`タグがクリックされたときに確認アラートを表示
 const button = document.getElementById("button");
 button.addEventListener("click", (event) => {
-  confirm("削除してよろしいですか？"); // 実際は削除しない
+  confirm("削除してよろしいですか？"); 
 });
 

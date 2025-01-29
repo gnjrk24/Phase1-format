@@ -9,8 +9,15 @@ const breakfast = "納豆ごはん";
 console.log(`今日の朝ごはんは${breakfast}でした。`);
 
 
-//この条件式はどちらになるでしょう。 3 > 7 || 2 < 9 
 
 
 // このnumObjの2にアクセス(取得)したいとき  答えnumobj["b"]
 const numObj = { a: 1, b: 2, c: 3, d: 4, e: 5 };
+
+const num = Math.random()
+
+if (num >= 0.5){
+    console.log('大きめ')
+}else{
+    console.log('小さめ')
+}
