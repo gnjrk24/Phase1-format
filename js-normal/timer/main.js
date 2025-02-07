@@ -1,5 +1,5 @@
-/*"inputTime"に時間を入力する
-document.getElementById("inputTime"); */
+//"inputTime"に時間を入力する
+const inputTime = document.getElementById("inputTime");
 
 //スタートボタン押されたら再スタート
 let sec = 10;
@@ -8,15 +8,16 @@ const nowTime = document.getElementById("nowTime");
 //変更ボタン(setTime)押す　“セット完了”
 const setTime = document.getElementById("setTime");
 setTime.addEventListener("click", function () {
+  console.dir(inputTime.valueAsNumber);
   alert("セット完了");
-
-  nowTime.textContent = sec;
+  sec = inputTime.valueAsNumber;
+  nowTime.textContent = inputTime.valueAsNumber + "：セット完了です";
 });
 
 //スタートボタンを押す
 let timer;
 const startTimer = document.getElementById("startTimer");
-startTimer("click", function () {
+startTimer.addEventListener("click", function () {
   clearInterval(timer);
   timer = setInterval("countDown()", 1000);
 });
