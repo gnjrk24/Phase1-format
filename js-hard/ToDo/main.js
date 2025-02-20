@@ -29,12 +29,12 @@ addBtn.addEventListener('click', function(){
     btn.innerHTML = '完了';
     //<ul><li></li> <button></button> </ul>
     console.log(btn.value);
-    
+    btn.addEventListener('click', function(){
+    lists.removeChild(newItem); 
+});
     
 });
 
 const btn = document.createElement('button');
+console.log("test")
 //完了ボタンを押したときにリストから削除
-btn.addEventListener('click', function(){
-    lists.parentNode.remove(newItem); 
-});
