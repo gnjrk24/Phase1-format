@@ -22,11 +22,11 @@ for (let g = 0; g < 6; g++){
     for (let i = 0; i < 5; i++){
         const td = document.createElement("td");  //<tr> <td></td> </tr> 
         tr.appendChild(td);
-            let s1 = Math.floor(Math.random()*14)+1;console.log(s1)
-            //let s2 = (Math.floor(Math.random()*14)+16); console.log(s2);
-            //s3[`${Math.floor(Math.random()*14)+31}`];
-            //s4[`${Math.floor(Math.random()*14)+46}`];
-            //s5[`${Math.floor(Math.random()*14)+61}`]; 
+            let s1 = (Math.floor(Math.random()*15)+1)+15*i;console.log(s1)
+            //s2 = (Math.floor(Math.random()*15)+1);
+            //s3[`${Math.floor(Math.random()*15)+1}`];
+            //s4[`${Math.floor(Math.random()*15)+1}`];
+            //s5[`${Math.floor(Math.random()*15)+1}`]; 
 
 
 
