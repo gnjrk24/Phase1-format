@@ -26,7 +26,7 @@ button.addEventListener('click', function(){
     //console.log(v);
     //同じ数字の場合はアラート　
     if( v[0] === v[1] || v[1] === v[2]){
-        alert('同じ数字は使えません');
+        alertc;
         return
     };
     //桁以外の数字はアラート
